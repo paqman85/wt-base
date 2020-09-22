@@ -1,0 +1,20 @@
+{% load static wagtailcore_tags wagtailimages_tags%}
+
+<section id="{{self.section_id}}" class="d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 {{self.div_css_class}}">
+          <h1>{{self.title}}</h1>
+          <h2>{{self.text}}</h2>
+          <div>
+            {% if self.button_1_text%}<a href="{{ self.button_1_link }}"><button href="{{ self.button_1_link }}" class="btn btn-light">{{self.button_1_text}}</button></a>{% endif %}
+            {% if self.button_2_text %}<a href="{{ self.button_2_link }}"><button class="btn btn-primary">{{self.button_2_text}}</button></a>{% endif %}
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+         {% image self.image original %}
+        </div>
+      </div>
+    </div>
+
+  </section>
