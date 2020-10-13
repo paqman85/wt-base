@@ -1,0 +1,20 @@
+{% load static wagtailcore_tags wagtailimages_tags%}
+
+<!-- ======= Content 2 Section ======= -->
+<section id="{{self.section_id}" class="about">
+    <div class="container chunked">
+        <div>
+        <h2 class="display-3" style="text-align:center;">{{self.title}}</h2>
+        </div>
+        <br>
+        <div class="row content">
+            <div class="col-lg-6">
+                {{self.column1text}}
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+                {{self.column2text}}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Content 2 Section -->

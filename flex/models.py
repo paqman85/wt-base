@@ -12,6 +12,13 @@ class FlexPage(Page):
     content = StreamField(
         [
             ("hero_simple", blocks.HeroSimpleBlock()),
+            ("content_1", blocks.Content1Block()),
+            ("content_2", blocks.Content2Block()),
+            ("content_2_btn", blocks.Content2BtnBlock()),
+            ("pre_testimonials", blocks.PreTestimonialsBlock()),
+            ("testimonials", blocks.TestimonialBlock()),
+            ("service_3", blocks.ServiceThreeBlock()),
+            ("cta_1", blocks.Cta1Block()),
         ],
         null=True,
         blank=True,

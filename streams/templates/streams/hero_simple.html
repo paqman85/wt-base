@@ -11,10 +11,9 @@
             {% if self.button_2_text %}<a href="{{ self.button_2_link }}"><button class="btn btn-primary">{{self.button_2_text}}</button></a>{% endif %}
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2">
-         {% image self.image original %}
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="200">
+          <img src="{{ self.image.url}}" class="img-fluid" alt="hero image">
         </div>
       </div>
     </div>
-
   </section>

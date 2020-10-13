@@ -1,0 +1,21 @@
+{% load static wagtailcore_tags wagtailimages_tags%}
+
+<!-- ======= Content 2 with button Section ======= -->
+<section id="{{self.section_id}" class="about">
+    <div class="container chunked">
+        <div>
+        <h2 class="display-3" style="text-align:center;">{{self.title}}</h2>
+        </div>
+        <br>
+        <div class="row content">
+            <div class="col-lg-6">
+                {{self.column1text}}
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+                {{self.column2text}}
+            {% if self.button_text%}<a href="{{ self.button_link }}"><button href="{{ self.button_link }}" class="btn btn-primary">{{self.button_text}}</button></a>{% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Content 2 with button Section -->
