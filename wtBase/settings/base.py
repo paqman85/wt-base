@@ -32,6 +32,7 @@ INSTALLED_APPS = [
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
+    'wagtail.contrib.modeladmin',
     'wagtail.embeds',
     'wagtail.sites',
     'wagtail.users',
@@ -45,6 +46,9 @@ INSTALLED_APPS = [
     'modelcluster',
     'taggit',
     'crispy_forms',
+    'wagtailmenus',
+    'blog',
+    'wagtailyoast',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -81,6 +85,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'wagtailmenus.context_processors.wagtailmenus',
             ],
         },
     },
@@ -166,3 +171,5 @@ WAGTAIL_SITE_NAME = "wtBase"
 BASE_URL = 'http://example.com'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+WY_LOCALE = 'en_US'
